@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <title>مسيرة للتمويل متناهي الصغر</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/nav.css" rel="stylesheet" type="text/css">
+    <link href="css/slider.css" rel="stylesheet" type="text/css">
+</head>
+<body class="">
+<div>
+    <div id="layout">
+        <div dir="rtl">
+            <nav class="shadow-lg sticky top-0 z-50 w-full bg-white transition duration-500 ease-in-out">
+                <div class="mx-auto p-4 lg:p-6">
+                    <div class="flex justify-between items-center">
+                        <a aria-current="page" class="nuxt-link-exact-active nuxt-link-active" href=""><img alt="Logo"
+                                                                                                            class="w-32 lg:w-40 logosm"
+                                                                                                            srcset="img/logo.png"
+                                                                                                            style="max-width: 100%;"></a>
+                        <div class="hidden lg:flex items-center" id="myTopnav">
+                            <p class="mb-0"><a class="text-sm font-semibold mr-4 hover:text-primary"
+                                               href="index.html"
+                                               id="home-link">الرئيسية </a></p>
+                            <p class="mb-0"><a class="text-sm font-semibold mr-4 hover:text-primary"
+                                               href="about.html"
+                                               id="about-link">عن مسيرة </a></p>
+                            <p class="mb-0"><a class="text-sm font-semibold mr-4 hover:text-primary"
+                                               href="index.html#products"
+                                               id="products-link">المنتجات </a></p>
+                            <p class="mb-0"><a class="text-sm font-semibold mr-4 hover:text-primary"
+                                               href="index.html#works"
+                                               id="works-link">طريقة الاستخدام</a></p>
+                            <p class="mb-0"><a class="text-sm font-semibold mr-4 hover:text-primary"
+                                               href="index.html#partners"
+                                               id="partners-link">شركاء مسيرة</a></p>
+                            <p class="mb-0"><a class="text-sm font-semibold mr-4 hover:text-primary"
+                                               href="index.html#faqs">أسئلة
+                                شائعة</a>
+                            </p>
+                            <p class="mb-0"><a class="text-sm font-semibold mr-4 hover:text-primary"
+                                               href="index.html#contact"
+                                               id="contact-us-link">اتصل بنا</a></p>
+                            <a
+                                    class="bg-primaryLight text-white text-sm uppercase py-2 px-4 rounded-lg transition duration-300 ease-in-out hidden xl:inline-block hover:bg-primary mr-6"
+                                    href="">احصل علي تمويلك الان</a>
+                        </div>
+                        <div class="lg:hidden flex items-center">
+                            <div>
+                                <button aria-label="mobile-menu-button" onclick="openNav()">
+                                    <svg class="w-6 h-6 text-gray-500 hover:text-primary" fill="none"
+                                         stroke="currentColor" stroke-linecap="round"
+                                         stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"
+                                         x-show="!showMenu">
+                                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="sidenav" id="mySidenav" style="text-align: center;">
+                                <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">×</a>
+                                <a href="index.html" onclick="closeNav()"> الرئيسية</a>
+                                <a href="about.html" onclick="closeNav()"> عن مسيرة</a>
+                                <a href="index.html#products" onclick="closeNav()">المنتجات</a>
+                                <a href="index.html#works" onclick="closeNav()">طريقة الاستخدام</a>
+                                <a href="index.html#partners" onclick="closeNav()">شركاء مسيرة</a>
+                                <a href="index.html#faqs" onclick="closeNav()">اسألة شائعة</a>
+                                <a href="index.html#contact" onclick="closeNav()">اتصل بنا</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="cd-hero js-cd-hero js-cd-autoplay">
+                <ul class="cd-hero__slider">
+                    <li class="cd-hero__slide cd-hero__slide--selected js-cd-slide">
+                        <div class="cd-hero__content cd-hero__content--half-width">
+                            <h2>اسرع قرض في مصر</h2>
+                            <p>قدم طلبك واحصل علي اسرع تمويل في مصر بدون مشاوير او اوراق</p>
+                            <a class="cd-hero__btn cd-hero__btn--secondary" href="0">احصل علي تمويلك الان</a>
+                        </div>
+                        <div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
+                            <img alt="fast loan in egypt" src="img/hero1.png">
+                        </div>
+                    </li>
+                    <li class="cd-hero__slide js-cd-slide">
+                        <div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
+                            <img alt="" src="img/hero2.png">
+                        </div>
+                        <div class="cd-hero__content cd-hero__content--half-width">
+                            <h2>بنهتم بعملائنا </h2>
+                            <p>يكمن نجاح مسيرة في قدرتها الفائقة على تحقيق رضا ودعم كل العملاء</p>
+                            <a class="cd-hero__btn cd-hero__btn--secondary" href="0">احصل علي تمويلك الان</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="cd-hero__nav js-cd-nav" >
+                    <nav>
+                        <span class="cd-hero__marker cd-hero__marker--item-1 js-cd-marker"></span>
+                        <ul>
+                            <li class="cd-selected">
+                                <a href="#0"> </a>
+                            </li>
+                            <li>
+                                <a href="#0"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <!-- .cd-hero__nav -->
+            </section>
+            <!-- .cd-hero -->
+            <!-- #######################################################################################-->
+            <section class="pt-8 lg:pt-16" id="about">
+                <div class="container mx-auto px-4 lg:p-10 lg:pt-0">
+                    <h2 class="text-center text-2xl mb-8 md:text-5xl md:mb-16">قيم مسيرة</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 md:gap-x-10 md:gap-y-0 xl:gap-14">
+                        <div class="mb-6 w-full xl:mb-0">
+                            <div class="w-32 h-32 md:w-44 md:h-44 mx-auto md:mx-0 text-center"><img alt=""
+                                                                                                    class="w-full h-full"
+                                                                                                    srcset="img/v1.jpg">
+                            </div>
+                            <h3 class="text-lg 2xl:text-xl font-bold pb-2 pt-3 h-auto xl:h-24 md:pt-6 text-center">رضا
+                                ودعم العملاء
+                            </h3>
+                            <p class="font-light w-full text-center">يكمن نجاح مسيرة في قدرتها الفائقة على تحقيق رضا
+                                ودعم والعملاء، حيث تنفرد الشركة بتزويد عملائها بحلول تمويلية ميسرة تحظى بأعلى درجات
+                                الثقة وتتميز بسهولة الاستفادة منها عبر أحدث الأنظمة التكنولوجية، مما يساهم في تلبية
+                                متطلبات نمو أعمالهم
+                            </p>
+                        </div>
+                        <div class="mb-6 w-full xl:mb-0">
+                            <div class="w-32 h-32 md:w-44 md:h-44 mx-auto md:mx-0 text-center"><img alt=""
+                                                                                                    class="w-full h-full"
+                                                                                                    srcset="img/v3.jpg">
+                            </div>
+                            <h3 class="text-lg 2xl:text-xl font-bold pb-2 pt-3 h-auto xl:h-24 md:pt-6 text-center">
+                                الشفافية
+                            </h3>
+                            <p class="font-light w-full text-center">تركز الشركة على تقديم كافة خدماتها إلى الفئات
+                                المجتمعية التي لا تحظى بتغطية خدمات القطاع المصرفي التقليدية. وفي هذا الإطار، تمثل قيمة
+                                الشفافية الأساس الداعم لنجاح الشركة في دمج تلك الفئات في منظومة الاقتصاد الوطني، وتعزيز
+                                الشمول المالي.
+                            </p>
+                        </div>
+                        <div class="mb-6 w-full xl:mb-0">
+                            <div class="w-32 h-32 md:w-44 md:h-44 mx-auto md:mx-0 text-center"><img alt=""
+                                                                                                    class="w-full h-full"
+                                                                                                    srcset="img/v4.jpg">
+                            </div>
+                            <h3 class="text-lg 2xl:text-xl font-bold pb-2 pt-3 h-auto xl:h-24 md:pt-6 text-center">
+                                المسؤولية
+                            </h3>
+                            <p class="font-light w-full text-center">تحرص مسيرة على تطبيق أفضل المعايير العالمية في
+                                ممارسة مسؤوليتها الاجتماعية، مع دمج القيم الاجتماعية التي تتبناها في ممارسة جميع
+                                أعمالها. كما تضع الشركة في مقدمة أهداف استراتيجياتها وأنشطتها تحقيق أهداف رسالتها
+                                الاجتماعية، والتي تشمل تقديم المنتجات الملائمة لاحتياجات كل عميل، والتسعير المسئول
+                                للمنتجات والخدمات المقدمة، والحفاظ على سرية بيانات العملاء
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a class="bg-primaryLight text-white text-md py-3 px-10 mt-6 inline-block rounded-lg font-semibold transition duration-300 ease-in-out hover:bg-primary md:text-xl md:mt-16"
+                           href="#" target="_blank">يلا نزل ابليكيشن مسيرة وقدم علي التمويل</a>
+                    </div>
+                </div>
+            </section>
+            <section class="text-gray-600 body-font" id="products">
+                <div class="container px-5 py-24 mx-auto">
+                    <h2 class="text-center text-2xl  mb-8 md:text-5xl md:mb-16">المنتجات </h2>
+                    <div class="flex flex-wrap -m-4">
+
+                        <div class="p-4 md:w-1/3">
+                            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                                <a
+                                        class=""
+                                        href="#"><img
+                                        alt="blog"
+                                        class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                        src="https://d2rk3idcydzrb.cloudfront.net/2021/10/pot-g395e777db_1920.jpg"></a>
+                                <div class="p-6">
+                                    <a
+                                            class=""
+                                            href="#">
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                                            منتج تمويلي رقم واحد
+                                        </h1>
+                                    </a>
+                                    <a
+                                            class=""
+                                            href="#">
+                                        <p class="leading-relaxed mb-3">
+                                            يكمن نجاح مسيرة في قدرتها الفائقة على تحقيق رضا ودعم والعملاء، حيث تنفرد
+                                            الشركة بتزويد عملائها بحلول تمويلية ميسرة تحظى بأعلى درجات الثقة وتتميز
+                                            بسهولة الاستفادة منها عبر أحدث الأنظمة التكنولوجية، مما يساهم في تلبية
+                                            متطلبات نمو أعمالهم
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 md:w-1/3">
+                            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                                <a
+                                        class=""
+                                        href="#"><img
+                                        alt="blog"
+                                        class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                        src="https://d2rk3idcydzrb.cloudfront.net/2021/10/pot-g395e777db_1920.jpg"></a>
+                                <div class="p-6">
+                                    <a
+                                            class=""
+                                            href="#">
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                                            منتج تمويلي رقم واحد
+                                        </h1>
+                                    </a>
+                                    <a
+                                            class=""
+                                            href="#">
+                                        <p class="leading-relaxed mb-3">
+                                            يكمن نجاح مسيرة في قدرتها الفائقة على تحقيق رضا ودعم والعملاء، حيث تنفرد
+                                            الشركة بتزويد عملائها بحلول تمويلية ميسرة تحظى بأعلى درجات الثقة وتتميز
+                                            بسهولة الاستفادة منها عبر أحدث الأنظمة التكنولوجية، مما يساهم في تلبية
+                                            متطلبات نمو أعمالهم
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 md:w-1/3">
+                            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                                <a
+                                        class=""
+                                        href="#"><img
+                                        alt="blog"
+                                        class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                        src="https://d2rk3idcydzrb.cloudfront.net/2021/10/pot-g395e777db_1920.jpg"></a>
+                                <div class="p-6">
+                                    <a
+                                            class=""
+                                            href="#">
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                                            منتج تمويلي رقم واحد
+                                        </h1>
+                                    </a>
+                                    <a
+                                            class=""
+                                            href="#">
+                                        <p class="leading-relaxed mb-3">
+                                            يكمن نجاح مسيرة في قدرتها الفائقة على تحقيق رضا ودعم والعملاء، حيث تنفرد
+                                            الشركة بتزويد عملائها بحلول تمويلية ميسرة تحظى بأعلى درجات الثقة وتتميز
+                                            بسهولة الاستفادة منها عبر أحدث الأنظمة التكنولوجية، مما يساهم في تلبية
+                                            متطلبات نمو أعمالهم
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <section class="pt-8 lg:pt-16" id="works">
+                <div class="bg-no-repeat bg-cover py-16 bg-pathAr">
+                    <div class="container mx-auto px-4 lg:p-10">
+                        <div class="w-full md:w-2/3 lg:w-1/2">
+                            <h2 class="text-2xl mb-8 text-center md:text-5xl mt-28 lg:mt-0 md:text-right">
+                                طريقة الاستخدام
+                            </h2>
+                        </div>
+                        <div class="block md:flex justify-between">
+                            <div class="w-full md:w-7/12 lg:w-8/12">
+                                <p class="text-md md:text-lg mb-2"><strong>حمل تطبيق مسيرة وقدم علي تمويلك في
+                                    دقايق</strong>
+                                </p>
+                                <p class="md:text-lg font-light mb-8 w-full md:w-11/12 text-md">قدم طلبك دلوقتي واحصل
+                                    علي اسرع تمويل في مصر بدون مشاوير او اوراق
+                                </p>
+                                <div class="step flex justify-start items-center mb-5">
+                                    <div class="text-primaryLight text-2xl border border-primaryLight rounded-full w-10 h-10 flex justify-center items-center transition duration-700 ease-in-out">
+                                        1
+                                    </div>
+                                    <div class="w-10/12 mr-5">
+                                        <p class="font-semibold text-xl">التحميل</p>
+                                        <span class="text-sm md:text-base">نزل التطبيق و سجل بياناتك.</span>
+                                    </div>
+                                </div>
+                                <div class="step flex justify-start items-center mb-5">
+                                    <div class="text-primaryLight text-2xl border border-primaryLight rounded-full w-10 h-10 flex justify-center items-center transition duration-700 ease-in-out">
+                                        2
+                                    </div>
+                                    <div class="w-10/12 mr-5">
+                                        <p class="font-semibold text-xl">طلب التمويل</p>
+                                        <span
+                                                class="text-sm md:text-base">اختار نظام التقسيط اللي يناسبك وسجل طلب تمويلك أونلاين من خلال التطبيق في دقائق.</span>
+                                    </div>
+                                </div>
+                                <div class="step flex justify-start items-center mb-5">
+                                    <div class="text-primaryLight text-2xl border border-primaryLight rounded-full w-10 h-10 flex justify-center items-center transition duration-700 ease-in-out">
+                                        3
+                                    </div>
+                                    <div class="w-10/12 mr-5">
+                                        <p class="font-semibold text-xl">المراجعة</p>
+                                        <span class="text-sm md:text-base">مسيرة هتراجع طلبك في لحظات وهتنزلك موافقة مبداية علي المبالغ اللي تقدر تاخدها.</span>
+                                    </div>
+                                </div>
+                                <div class="step flex justify-start items-center mb-5">
+                                    <div class="text-primaryLight text-2xl border border-primaryLight rounded-full w-10 h-10 flex justify-center items-center transition duration-700 ease-in-out">
+                                        4
+                                    </div>
+                                    <div class="w-10/12 mr-5">
+                                        <p class="font-semibold text-xl">استلم فلوسك من مكتب البريد</p>
+                                        <span
+                                                class="text-sm md:text-base">هتقدر تروح تسلتم تمويلك من اقرب مكتب بريد قريب منك برقم البطاقة .</span>
+                                    </div>
+                                </div>
+                                <div class="step flex justify-start items-center mb-5">
+                                    <div class="text-primaryLight text-2xl border border-primaryLight rounded-full w-10 h-10 flex justify-center items-center transition duration-700 ease-in-out">
+                                        5
+                                    </div>
+                                    <div class="w-10/12 mr-5">
+                                        <p class="font-semibold text-xl">تسديد الأقساط</p>
+                                        <span
+                                                class="text-sm md:text-base">هتقدر تسدد قسط بسهولة في اي وقت عن طريق اقرب ماكينة فوري وقريب اوي هنفعل وسائل تانية كتير علشان نسهلها عليك .</span>
+                                    </div>
+                                </div>
+                                <div class="flex my-10 md:mt-14">
+                                    <a class="w-44 xl:w-1/4 ml-4 md:ml-10" href="#" target="_blank"><img alt="gplay"
+                                                                                                         class="w-full h-full"
+                                                                                                         srcset="img/gplay.svg"></a>
+                                    <a class="w-44 xl:w-1/4" href="#" target="_blank"><img alt="appstore"
+                                                                                           class="w-full h-full"
+                                                                                           srcset="img/appstore.svg"></a>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-5/12 lg:w-4/12 hidden md:block">
+                                <!---->
+                                <img alt="app" class="w-1/2 h-1/2 mx-auto md:w-3/4 md:h-auto md:mx-0" src="img/app.png">
+                                <!---->
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pt-8 lg:pt-16" data-fetch-key="0" id="partners">
+                <div class="container mx-auto px-4 lg:p-10 mb-8 md:mb-14 relative">
+                    <h2 class="text-center text-2xl mb-8 md:text-5xl md:mb-16">شركاء مسيرة</h2>
+                    <div class="flex justify-center flex-wrap">
+                        <div class="w-1/5 md:w-1/12 flex items-center" v-if="merchants.length">
+                            <div class="w-5/6 mx-auto mb-10"><img alt="post" class="w-full merchant-logo"
+                                                                  src="img/post.jpg"></div>
+                        </div>
+                        <div class="w-1/5 md:w-1/12 flex items-center" v-if="merchants.length">
+                            <div class="w-5/6 mx-auto mb-10"><img alt="is" class="w-full merchant-logo"
+                                                                  src="img/fawry.jpg"></div>
+                        </div>
+                        <div class="w-1/5 md:w-1/12 flex items-center" v-if="merchants.length">
+                            <div class="w-5/6 mx-auto mb-10"><img alt="is" class="w-full merchant-logo"
+                                                                  src="img/is.jpg"></div>
+                        </div>
+                        <div class="w-1/5 md:w-1/12 flex items-center" v-if="merchants.length">
+                            <div class="w-5/6 mx-auto mb-10"><img alt="post" class="w-full merchant-logo"
+                                                                  src="img/bm.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pt-8 lg:pt-16" data-fetch-key="0" id="faqs">
+                <div class="bg-path bg-no-repeat bg-cover ">
+                    <div class="container mx-auto p-4 lg:p-10">
+                        <div class="block md:flex justify-around items-center rtl:flex-row-reverse">
+                            <h2 class="text-2xl mb-8 text-center md:text-5xl mt-28 lg:mt-0 md:text-right">عاوز تعرف
+                                معلومات اكتر ؟
+                            </h2>
+                            <div class="mx-auto w-3/5 md:w-1/5"><img alt="FAQ" class="mx-auto" src="img/faq.svg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mx-auto p-4 lg:p-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="shadow-lg p-4 lg:p-10">
+                            <h3 class="text-lg font-semibold mb-6 text-center md:text-right">إزاي اقدر اسحب فلوسي بعد ما
+                                يتوافقلي علي الرصيد ؟
+                            </h3>
+                            <p class="font-light leading-8 text-right"><span>ببطاقة الرقم القومي بتاعتك هتتوجه لاقرب مكتب بريد وتطلب سحب المبلغ ببطاقة الرقم القومي</span>
+                            </p>
+                        </div>
+                        <div class="shadow-lg p-4 lg:p-10">
+                            <h3 class="text-lg font-semibold mb-6 text-center md:text-right">إزاي ادفع أقساطي ؟</h3>
+                            <p class="font-light leading-8 text-right"><span>ممكن تدفع من خلال أكتر من 200.000 مركز دفع حواليك عن طريق فوري أو امان أو bee أو أوباي أو أي محفظة الكترونية زي فودافون كاش، اتصالات كاش، أورنج كاش، ميزا أو حتي من خلال كارت البنك الخاص بك.</span>
+                            </p>
+                            <!---->
+                            <!---->
+                        </div>
+                        <div class="shadow-lg p-4 lg:p-10">
+                            <h3 class="text-lg font-semibold mb-6 text-center md:text-right">إزاي اتواصل مع مسيرة؟</h3>
+                            <p class="font-light leading-8 text-right"><span>ممكن تتواصل معانا من خلال التليفون على رقم <a
+                                    class="text-primary font-semibold" href="tel:15484" rel="noopener">15484</a><br>
+                              أو تبعتلنا استفسارك على <a class="text-primary font-semibold"
+                                                         href="mailto:contact@maseeracapital.com"
+                                                         rel="noopener">contact@maseeracapital.com</a><br>
+                              وكمان من خلال رسايل صفحة الفيس بوك.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-grayLight mt-8 lg:mt-16" id="contact">
+                <div class="container mx-auto p-4 lg:p-10 lg:pb-0">
+                    <div class="flex justify-center xl:justify-between flex-wrap text-center md:text-right">
+                        <div class="mb-6 w-full md:w-8/12 xl:w-5/12 xl:mb-0">
+                            <img alt="Logo" class="w-32 lg:w-40 logosm" srcset="img/logo.png">
+                            <div>
+                                <p>توفير آليات الاستعانة بخدمات وحلول الاقتراض لأصحاب المشروعات الصغيرة والمتناهية الصغر
+                                    لتنمية أعمالهم والتوسع بها، وذلك لخلق فرص عمل جديدة وتحسين مستوى المعيشة وتعظيم
+                                    المردود الإيجابي للمجتمعات المحيطة بمشروعاتهم
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-6 w-full md:w-1/2 xl:w-3/12 xl:mb-0 text-center">
+                            <p class="font-bold text-xl mb-8">الدعم</p>
+                            <ul>
+                                <li class="mb-1">
+                                    <a href="about.html"><span
+                                            class="transition duration-500 ease-in-out hover:text-primary"> عن مسيرة</span></a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="privacy.html"><span
+                                            class="transition duration-500 ease-in-out hover:text-primary">سياسة الخصوصية</span></a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="terms.html"><span
+                                            class="transition duration-500 ease-in-out hover:text-primary">الشروط والأحكام</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mb-6 w-full md:w-1/2 xl:w-3/12 xl:mb-0 text-center">
+                            <p class="font-bold text-xl mb-8">اتصل بنا</p>
+                            <p>
+                                <b>المكتب الرئيسي :</b>
+                                مبني 34 تقاطع شارع 16 مع النهضة - المعادي - القاهرة
+                            </p>
+                            <a
+                                    class="mr-2 flex justify-center items-center mt-6" dir="ltr" href="tel:15484"
+                                    rel="noopener">
+                                <img alt="Phone" class="w-6 h-6 inline-block"
+                                     src="img/phone-icon.4e76cf1.svg">
+                                <div class="font-bold text-xl ml-2">
+                                    15484
+                                </div>
+                            </a>
+                            <div class="flex justify-center mt-3">
+                                <a href="#" rel="noopener" target="_blank">
+                                    <img alt="facebook" class="w-10 h-10 rounded-full" src="img/fb.png">
+                                </a>
+                                <a href="#" rel="noopener" target="_blank">
+                                    <img alt="youtube" class="w-10 h-10 rounded-full" src="img/yt.png">
+                                </a>
+                                <a href="#" rel="noopener" target="_blank">
+                                    <img alt="tiktok" class="w-10 h-10 rounded-full" src="img/tiktok.png">
+                                </a>
+                                <a href="#" rel="noopener" target="_blank">
+                                    <img alt="instagram" class="w-10 h-10 rounded-full" src="img/instagram.png">
+                                </a>
+                                <a href="#" rel="noopener" target="_blank">
+                                    <img alt="linkedin" class="w-10 h-10 rounded-full" src="img/linkedin.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-gray-500 text-sm py-7">
+                    شركة مسيرة القابضة للاستثمارات المالية - 2023
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/app.js"></script>
+</div>
+</body>
+</html>
