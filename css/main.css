@@ -2691,3 +2691,9 @@ html {
   transform: scale(1.05) rotate(1deg);
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 128px;
+}
